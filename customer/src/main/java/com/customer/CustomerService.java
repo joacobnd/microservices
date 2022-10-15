@@ -2,10 +2,10 @@ package com.customer;
 
 import com.clients.fraud.FraudCheckResponse;
 import com.clients.fraud.FraudClient;
+import com.clients.n0tification.NotificationClient;
+import com.clients.n0tification.NotificationRequest;
 import lombok.AllArgsConstructor;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 @Service
 @AllArgsConstructor
@@ -13,7 +13,7 @@ public class CustomerService {
 
     private final CustomerRepository customerRepository;
 
-    private final RestTemplate restTemplate;
+    private final NotificationClient notificationClient;
 
     private final FraudClient fraudClient;
 
@@ -22,7 +22,6 @@ public class CustomerService {
         Customer customer = Customer.builder()
                 .firstName(request.firstName())
                 .lastName(request.lastName())
-                .email(request.email())
                 .build();
 
 
@@ -39,8 +38,13 @@ public class CustomerService {
             throw new IllegalStateException("fraudster");
         }
 
+        notificationClient.sendNotification(
+                new NotificationRequest(
+                        customer.getId(),
+                        customer.getEmail(),
+                        String.format("Hi %s, welcome to Amigoscode course....", customer.getFirstName())
+                )
+        );
 
-
-        //todo: send notification
     }
 }
