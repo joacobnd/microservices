@@ -14,18 +14,6 @@ services:
     restart: unless-stopped
 
 
-  postgres-fraud:
-    container_name: postgres
-    environment:
-      - POSTGRES_USER=admin
-      - POSTGRES_PASSWORD=admin
-    volumes:
-      - postgres:/data/postgres
-    ports:
-      - "5432:5432"
-    networks:
-      - postgres
-    restart: unless-stopped
 
   pgadmin:
     container_name: pgadmin
@@ -41,6 +29,14 @@ services:
     networks:
       - postgres
     restart: unless-stopped
+
+
+  zipkin:
+      image: openzipkin/zipkin
+      container_name: zipkin
+      ports:
+        - "9411:9411"
+
 
 networks:
   postgres:

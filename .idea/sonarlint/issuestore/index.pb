@@ -17,8 +17,6 @@ o
 ?clients/src/main/java/com/clients/fraud/FraudCheckResponse.java,d\4\d45169a7ce14b9b26d34b9caaa71637248560bdd
 n
 >fraud/src/main/java/com/fraud/FraudCheckHistoryRepository.java,4\1\411fd8300737ce8717ae883f0e2db92ed6bbb235
-B
-docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
 h
 8clients/src/main/java/com/clients/fraud/FraudClient.java,2\2\223ee8d1dad8ccb5b2c9f4b4a6512cecd1f8c339
 w
