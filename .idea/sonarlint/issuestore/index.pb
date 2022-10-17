@@ -1,16 +1,8 @@
 
 t
 Dcustomer/src/main/java/com/customer/CustomerRegistrationRequest.java,c\0\c04ceccce73ad16625dfc3867875b44645c7bf59
-d
-4fraud/src/main/java/com/fraud/FraudCheckHistory.java,d\8\d8f605238c9cf2a0c3d2e51e585c21c78958b2dc
-c
-3fraud/src/main/java/com/fraud/FraudApplication.java,4\9\49c6644925ff4e98a5a50cb622a743901e779893
 k
 ;customer/src/main/java/com/customer/CustomerController.java,4\6\4626e8c5eb2d0c34f9d64a90c58579b4f70a150a
-d
-4fraud/src/main/java/com/fraud/FraudCheckService.java,7\6\765f0107f9ea9e48902cc62a10794f545894e605
-b
-2fraud/src/main/java/com/fraud/FraudController.java,2\4\24e49da64653ff96fad716ef633b832267d07787
 y
 Ieureka-server/src/main/java/com/eurekaserver/EurekaServerApplication.java,c\a\cada9f2e080a2022ea06db5d0c844183619fa7d2
 o
