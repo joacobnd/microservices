@@ -39,8 +39,6 @@ w
 G.idea/sonarlint/issuestore/7/6/765f0107f9ea9e48902cc62a10794f545894e605,5\e\5e6c68d22de28462fffdf09a9a5fe8399b4651a5
 k
 ;customer/src/main/java/com/customer/CustomerRepository.java,2\e\2e8ecdcc71a06cacd3a2719142c3592fa42bae83
-h
-8customer/src/main/java/com/customer/CustomerService.java,8\5\85670d569e450b7d0080538b200855f4904c8a31
 m
 =n0tification/src/main/java/com/n0tification/Notification.java,3\0\3011e1f9eccbea86d6b7c025c1d741498bedb05e
 w
