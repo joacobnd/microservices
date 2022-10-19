@@ -77,8 +77,6 @@ b
 2fraud/src/main/java/com/fraud/FraudController.java,2\4\24e49da64653ff96fad716ef633b832267d07787
 d
 4fraud/src/main/java/com/fraud/FraudCheckService.java,7\6\765f0107f9ea9e48902cc62a10794f545894e605
-=
-apigw/pom.xml,7\6\769e90cc07d0503e53ff9da3a1e936a2b49abb7c
 c
 3apigw/src/main/java/com/apigw/ApiGWApplication.java,4\e\4ea64f0c048e0a9e95edd3affda44cabec9ad15f
 c
