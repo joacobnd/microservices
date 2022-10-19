@@ -47,7 +47,7 @@ public class CustomerService {
 
         rabbitMQMessageProducer.publish(
                 notificationRequest,
-                "internal-exchange",
+                "internal.exchange",
                 "internal.notification.routing-key"
         );
 

@@ -77,12 +77,8 @@ _
 /amqp/src/main/java/com/amqp/RabbitMQConfig.java,7\7\77201ff8cd1a1e9a43e462b8d07b296602574195
 B
 docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
-h
-8amqp/src/main/java/com/amqp/RabbitMQMessageProducer.java,5\d\5d0645625c600fb8e8919a77e99a15c2e9cfc197
 x
 Hn0tification/src/main/java/com/n0tification/NotificationApplication.java,3\7\3743a561086b0850599c9de5bcbab2c6529b66ee
-s
-Cn0tification/src/main/java/com/n0tification/NotificationConfig.java,1\a\1a15799847158d5363c269567eb7c33ccb54b001
 @
 customer/pom.xml,f\0\f04db7a99ce1257e856612bd563cd946a39fac96
 ?
