@@ -78,13 +78,9 @@ b
 d
 4fraud/src/main/java/com/fraud/FraudCheckService.java,7\6\765f0107f9ea9e48902cc62a10794f545894e605
 c
-3apigw/src/main/java/com/apigw/ApiGWApplication.java,4\e\4ea64f0c048e0a9e95edd3affda44cabec9ad15f
-c
 3fraud/src/main/java/com/fraud/FraudApplication.java,4\9\49c6644925ff4e98a5a50cb622a743901e779893
 a
 1customer/src/main/java/com/customer/Customer.java,a\f\af3d86d830d92b040f49da57c7861b6ada530c28
-x
-Hn0tification/src/main/java/com/n0tification/NotificationApplication.java,3\7\3743a561086b0850599c9de5bcbab2c6529b66ee
 l
 <customer/src/main/java/com/customer/CustomerApplication.java,b\0\b083e22021f64dea79d03273a9aecc76751cb665
 d
