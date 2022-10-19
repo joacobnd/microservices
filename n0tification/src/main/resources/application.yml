@@ -30,4 +30,4 @@ rabbitmq:
   queue:
     notification: notification.queue
   routing-keys:
-    internal-notification: internal.notifcation.routing-key
+    internal-notification: internal.notification.routing-key
