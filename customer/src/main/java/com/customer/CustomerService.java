@@ -1,5 +1,6 @@
 package com.customer;
 
+import com.amqp.RabbitMQMessageProducer;
 import com.clients.fraud.FraudCheckResponse;
 import com.clients.fraud.FraudClient;
 import com.clients.n0tification.NotificationClient;
@@ -13,9 +14,9 @@ public class CustomerService {
 
     private final CustomerRepository customerRepository;
 
-    private final NotificationClient notificationClient;
-
     private final FraudClient fraudClient;
+
+    private final RabbitMQMessageProducer rabbitMQMessageProducer;
 
 
     public void registerCustomer(CustomerRegistrationRequest request) {
@@ -38,13 +39,20 @@ public class CustomerService {
             throw new IllegalStateException("fraudster");
         }
 
-        notificationClient.sendNotification(
-                new NotificationRequest(
-                        customer.getId(),
-                        customer.getEmail(),
-                        String.format("Hi %s, welcome to Amigoscode course....", customer.getFirstName())
-                )
+        NotificationRequest notificationRequest = new NotificationRequest(
+                customer.getId(),
+                customer.getEmail(),
+                String.format("Hi %s, welcome to Amigoscode course....", customer.getFirstName())
         );
+
+        rabbitMQMessageProducer.publish(
+                notificationRequest,
+                "internal-exchange",
+                "internal.notification.routing-key"
+        );
+
+
+
 
     }
 }

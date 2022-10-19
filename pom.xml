@@ -17,6 +17,9 @@
         <module>n0tification</module>
         <module>apigw</module>
         <module>amqp</module>
+        <module>apigw</module>
+        <module>apigw</module>
+        <module>apigw</module>
     </modules>
 
     <properties>

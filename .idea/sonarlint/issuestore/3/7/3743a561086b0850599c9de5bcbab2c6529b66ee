@@ -1,0 +1,8 @@
+
+X	java:S125"<This block of commented-out lines of code should be removed.(¬å’º8¨¾ÎŒ¿0
+_
+java:S1128"=Remove this unused import 'com.amqp.RabbitMQMessageProducer'.(Ãı·ƒıÿÿÿÿ8¨¾ÎŒ¿0
+d
+java:S1128"GRemove this unused import 'org.springframework.boot.CommandLineRunner'.(È—ÿÅ8¨¾ÎŒ¿0
+e
+java:S1128"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚î‰Ş8©¾ÎŒ¿0
