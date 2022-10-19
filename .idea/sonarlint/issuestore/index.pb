@@ -43,14 +43,8 @@ t
 Dn0tification/src/main/java/com/n0tification/NotificationService.java,1\d\1de037ad61f077de78cd1b48cbd962f4854edf44
 w
 Gclients/src/main/java/com/clients/n0tification/NotificationRequest.java,2\3\238bc89b2c01c429d3d4ca4925faf70833fd2f8d
-D
-n0tification/pom.xml,f\a\fab651677c67bc298adf87d43f621ce531accd0f
-@
-customer/pom.xml,f\0\f04db7a99ce1257e856612bd563cd946a39fac96
 E
 eureka-server/pom.xml,b\3\b39ae52d769ea03b699b5602439afd875433c8a7
-=
-fraud/pom.xml,d\0\d024669e89b7b66ac8ba07340a73edc6aa228259
 h
 8customer/src/main/java/com/customer/CustomerService.java,8\5\85670d569e450b7d0080538b200855f4904c8a31
 w
