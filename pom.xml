@@ -16,6 +16,7 @@
         <module>clients</module>
         <module>n0tification</module>
         <module>apigw</module>
+        <module>amqp</module>
     </modules>
 
     <properties>
