@@ -25,6 +25,7 @@ public class Notification {
     )
     private Integer notificationId;
     private Integer toCustomerId;
+    private String toCustomerName;
     private String toCustomerEmail;
     private String sender;
     private String message;
