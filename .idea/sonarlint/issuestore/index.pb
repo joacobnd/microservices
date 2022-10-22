@@ -55,8 +55,6 @@ c
 3fraud/src/main/java/com/fraud/FraudApplication.java,4\9\49c6644925ff4e98a5a50cb622a743901e779893
 d
 4fraud/src/main/java/com/fraud/FraudCheckHistory.java,d\8\d8f605238c9cf2a0c3d2e51e585c21c78958b2dc
-_
-/amqp/src/main/java/com/amqp/RabbitMQConfig.java,7\7\77201ff8cd1a1e9a43e462b8d07b296602574195
 w
 G.idea/sonarlint/issuestore/e/a/ea7be0253f43662be44146f26e7cc67eac1dec95,8\f\8f9b166793c35ae1f9dde53e9cfcfd3e13342dd3
 w
@@ -107,8 +105,6 @@ w
 G.idea/sonarlint/issuestore/3/9/39d5bf97f55ed62f85d09f9444dcd78c9eb5188e,a\3\a36e61bf3e2f4b3658e72e105c5d2ce375adf2d4
 c
 3apigw/src/main/java/com/apigw/ApiGWApplication.java,4\e\4ea64f0c048e0a9e95edd3affda44cabec9ad15f
-h
-8amqp/src/main/java/com/amqp/RabbitMQMessageProducer.java,5\d\5d0645625c600fb8e8919a77e99a15c2e9cfc197
 B
 docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
 l
@@ -137,11 +133,5 @@ m
 Nn0tification/src/main/java/com/n0tification/rabbitmq/NotificationConsumer.java,7\2\7254d4e8123034195e9a6f63d9f3ad5f8bad3557
 t
 Dn0tification/src/main/java/com/n0tification/NotificationService.java,1\d\1de037ad61f077de78cd1b48cbd962f4854edf44
-<
-amqp/pom.xml,3\9\39d5bf97f55ed62f85d09f9444dcd78c9eb5188e
-?
-clients/pom.xml,e\8\e897e41994586ab73af075bc072526099d5eec43
-=
-fraud/pom.xml,d\0\d024669e89b7b66ac8ba07340a73edc6aa228259
 D
 n0tification/pom.xml,f\a\fab651677c67bc298adf87d43f621ce531accd0f

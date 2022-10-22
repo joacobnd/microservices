@@ -20,6 +20,20 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     </plugins>
 </build>
 
+<profiles>
+    <profile>
+        <id>build-docker-image</id>
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>com.google.cloud.tools</groupId>
+                    <artifactId>jib-maven-plugin</artifactId>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>
+</profiles>
+
 <dependencies>
     <dependency>
         <groupId>org.springframework.cloud</groupId>
