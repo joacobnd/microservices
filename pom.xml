@@ -17,9 +17,6 @@
         <module>n0tification</module>
         <module>apigw</module>
         <module>amqp</module>
-        <module>apigw</module>
-        <module>apigw</module>
-        <module>apigw</module>
     </modules>
 
     <properties>
@@ -56,6 +53,7 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
