@@ -1,0 +1,52 @@
+Cluster:
+Set of nodes
+nodes = Virual or physical machine
+
+Kubernetes Cluster
+
+Master cluster (node) only one
+Work cluster (node) tons of them
+
+
+Master Node:
+-Master runs aall cluster's control plane services
+-The brains where control and decisions are made
+
+
+Master node contain:
+
+Control Plane:
+Compuesto por componentes principales: API Server, Cluster Store, Control Manager, Cloud Controller Manager
+
+API Server =
+-Frontend to kubernetes control plane
+-All communications go through API Server EXTERNAL and Internal
+-Exposes Restful API on port 443
+-Authentication and Authorisation checks
+
+
+Cluster Store|State:  ETCD
+-Stores configuration and state of the entire cluster
+-Distributed Key Value data store
+-Single source of truth
+
+
+Scheduler:
+-Watches for new workloads/pods and assings them to a node based on several scheduling factors.
+-Healthy?
+-Enough resources?
+-Port Available?
+-Affinity and Anti Affinity rules
+-Etc
+
+Controller Manager:
+-Daemon that manages the control loop. COntrollers of controllers
+  - Node Controller :
+
+Cloud Controller Manager:
+-Responsible to interact with underlying cloud provider ( AWS, Azure, Google Cloud )
+
+Example Route: In > API > ETCD(Store) > CCD > AWS, GOOGLE CLOUD
+
+Master in a nutshell
+

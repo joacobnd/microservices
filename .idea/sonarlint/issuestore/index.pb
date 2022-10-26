@@ -109,8 +109,6 @@ h
 8amqp/src/main/java/com/amqp/RabbitMQMessageProducer.java,5\d\5d0645625c600fb8e8919a77e99a15c2e9cfc197
 _
 /amqp/src/main/java/com/amqp/RabbitMQConfig.java,7\7\77201ff8cd1a1e9a43e462b8d07b296602574195
-=
-fraud/pom.xml,d\0\d024669e89b7b66ac8ba07340a73edc6aa228259
 v
 Fclients/src/main/java/com/clients/n0tification/NotificationClient.java,0\3\03c5ca696b9df6777d6b61f2cb15d2b9ca4b2efe
 w
@@ -129,6 +127,3 @@ c
 3apigw/src/main/java/com/apigw/ApiGWApplication.java,4\e\4ea64f0c048e0a9e95edd3affda44cabec9ad15f
 ?
 clients/pom.xml,e\8\e897e41994586ab73af075bc072526099d5eec43
-:
-
-Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
