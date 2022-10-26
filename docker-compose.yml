@@ -1,10 +1,11 @@
 services:
   postgres:
-    image: postgres
     container_name: postgres
+    image: postgres
     environment:
-      - POSTGRES_USER=admin
-      - POSTGRES_PASSWORD=admin
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      PGDATA: /data/postgres
     volumes:
       - postgres:/data/postgres
     ports:
@@ -12,15 +13,12 @@ services:
     networks:
       - postgres
     restart: unless-stopped
-
-
-
   pgadmin:
     container_name: pgadmin
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: "admin"
-      PGADMIN_DEFAULT_PASSWORD: "admin"
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
       PGADMIN_CONFIG_SERVER_MODE: 'False'
     volumes:
       - pgadmin:/var/lib/pgadmin
@@ -29,25 +27,23 @@ services:
     networks:
       - postgres
     restart: unless-stopped
-
-
   zipkin:
-      image: openzipkin/zipkin
-      container_name: zipkin
-      ports:
-        - "9411:9411"
-      networks:
-        - spring
-
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
+    networks:
+      - spring
   rabbitmq:
     image: rabbitmq:3.9.11-management-alpine
     container_name: rabbitmq
     ports:
       - "5672:5672"
       - "15672:15672"
-
+    networks:
+      - spring
   eureka-server:
-    image: eureka-server:latest
+    image: joacobnd/eureka-server:latest
     container_name: eureka-server
     ports:
       - "8761:8761"
@@ -57,9 +53,8 @@ services:
       - spring
     depends_on:
       - zipkin
-
   apigw:
-    image: apigw:latest
+    image: joacobnd/apigw:latest
     container_name: apigw
     ports:
       - "8083:8083"
@@ -70,15 +65,56 @@ services:
     depends_on:
       - zipkin
       - eureka-server
-
-
-
+  customer:
+    image: joacobnd/customer:latest
+    container_name: customer
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+      - eureka-server
+      - postgres
+      - rabbitmq
+  fraud:
+    image: joacobnd/fraud:latest
+    container_name: fraud
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+      - eureka-server
+      - postgres
+      - rabbitmq
+  notification:
+    image: joacobnd/n0tification:latest
+    container_name: n0tification
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+      - eureka-server
+      - postgres
+      - rabbitmq
 networks:
   postgres:
     driver: bridge
   spring:
     driver: bridge
-
 
 volumes:
   postgres:

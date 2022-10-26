@@ -16,6 +16,9 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <plugin>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+                <mainClass>com.apigw.ApiGWApplication</mainClass>
+            </configuration>
         </plugin>
     </plugins>
 </build>
@@ -28,6 +31,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
                 <plugin>
                     <groupId>com.google.cloud.tools</groupId>
                     <artifactId>jib-maven-plugin</artifactId>
+                    <configuration>
+                        <container>
+                            <mainClass>com.apigw.ApiGWApplication</mainClass>
+                        </container>
+                    </configuration>
                 </plugin>
             </plugins>
         </build>

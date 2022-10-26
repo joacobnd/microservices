@@ -17,6 +17,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.eurekaserver.EurekaServerApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
@@ -29,6 +32,11 @@
                     <plugin>
                         <groupId>com.google.cloud.tools</groupId>
                         <artifactId>jib-maven-plugin</artifactId>
+                        <configuration>
+                            <container>
+                                <mainClass>com.eurekaserver.EurekaServerApplication</mainClass>
+                            </container>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
