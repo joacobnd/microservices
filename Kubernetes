@@ -48,5 +48,34 @@ Cloud Controller Manager:
 
 Example Route: In > API > ETCD(Store) > CCD > AWS, GOOGLE CLOUD
 
-Master in a nutshell
+
+Worker Node:
+-VM or Physical Machine running linux
+-Provides running environment for your applications
+-3 Main Components:
+    -Kubelet
+    -Container Runtime
+    -Kube Proxy
+
+Kubelet:
+-Main Agent that runs on every node
+-Receives pod definitions from API server
+-Interacts with Container Runtime to run containers associated with the Pod
+-Reports Node and Pod state to master
+
+API <- -> Kubelet -> Container Runtime
+
+Container Runtime:
+-Reponsible to pull images from Containers Registries like Docker etc.
+-Starting container from images
+-Container Runtime Interface ( CRI )
+    -Interface for 3rd party container runtime
+    -ContainerD
+
+Kube Proxy:
+-Agent runs on everyone through DaemonSets
+-Reonsible for :
+    -Local cluster networking
+    -Each node gets own unique IP address
+    -Routing network traffic to load balanced services
 
