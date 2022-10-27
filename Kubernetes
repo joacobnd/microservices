@@ -66,7 +66,7 @@ Kubelet:
 API <- -> Kubelet -> Container Runtime
 
 Container Runtime:
--Reponsible to pull images from Containers Registries like Docker etc.
+-Responsible to pull images from Containers Registries like Docker etc.
 -Starting container from images
 -Container Runtime Interface ( CRI )
     -Interface for 3rd party container runtime
@@ -74,8 +74,32 @@ Container Runtime:
 
 Kube Proxy:
 -Agent runs on everyone through DaemonSets
--Reonsible for :
+-Responsible for :
     -Local cluster networking
     -Each node gets own unique IP address
     -Routing network traffic to load balanced services
+
+Pods:
+-A pod is the smallest deployable unit in Kubernetes and not containers
+-Group of 1 or more Container
+-Represents a running process
+-Share network and Volumes
+-Never Create Pods on its own. Use Controllers Instead
+-Ephemeral and Disposable
+
+Pod only can have 1 main container
+
+Services:
+-Stable IP Address
+-Stable DNS Name
+-Stable Port
+-Types of Services:
+    -ClusterIP(Default)
+    -NodePort
+    -ExternalName
+    -LoadBalancer
+
+
+
+
 
