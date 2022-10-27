@@ -40,7 +40,7 @@ Scheduler:
 -Etc
 
 Controller Manager:
--Daemon that manages the control loop. COntrollers of controllers
+-Daemon that manages the control loop. Controllers of controllers
   - Node Controller :
 
 Cloud Controller Manager:
