@@ -154,3 +154,10 @@ E
 :
 
 Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
+=
+fraud/pom.xml,d\0\d024669e89b7b66ac8ba07340a73edc6aa228259
+:
+
+Kubernetes,b\e\bee0cb05f850f53dc7ec012e5b12bbe98948693b
+B
+docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a

@@ -1,0 +1,5 @@
+Error al usar:
+kubectl exec -it postgres-0 -- psql -U admin
+
+SOLUCION:
+kubectl exec -it <container_id/container_name> psql -U <user_name> <database_name>
