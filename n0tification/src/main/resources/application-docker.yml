@@ -26,6 +26,9 @@ eureka:
       defaultZone: http://eureka-server:8761/eureka
     fetch-registry: true
     register-with-eureka: true
+    enabled: false
+
+##We disable Eureka server cuz we dont need it when we are using K8s
 
 rabbitmq:
   exchanges:
