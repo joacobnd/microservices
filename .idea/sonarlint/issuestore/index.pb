@@ -161,3 +161,5 @@ Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
 Kubernetes,b\e\bee0cb05f850f53dc7ec012e5b12bbe98948693b
 B
 docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
+7
+machete,1\c\1ce3ff276fe11ba91ba946e9d3583c4f5a39a3eb
