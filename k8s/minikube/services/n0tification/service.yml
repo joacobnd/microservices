@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: n0tification
+spec:
+  selector:
+    app: n0tification
+  ports:
+    - port: 80
+      targetPort: 8082
+  type: LoadBalancer
